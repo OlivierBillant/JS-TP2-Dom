@@ -39,6 +39,7 @@ console.log("6. Ok");
 
 // 7 - Récupérer  tous les seconds elements "li" de nos "ul"
 let liSecondElements = document.querySelectorAll("ul>li:nth-child(2)");
+// On peut aussi obtenir les occurences impaires en passant 2n+1 a nth-child
 console.log(liSecondElements);
 Array.from(liSecondElements).forEach(element => element.style.cssText = "color : red");
 console.log("7. Ok");
