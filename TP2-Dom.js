@@ -63,6 +63,12 @@ divJavascript.appendChild(paragraphe);
 // - changer le couleur du paragraphe en bleu et mettre le mot "monde" en gras
 paragraphe.style.color = "blue";
 paragraphe.innerHTML = "Salut tout le <strong>monde</strong> !"
+// paragraphe.innerHTML = "Salut tout le <b>monde</b> !"
+// paragraphe.innerHTML = "Salut tout le <span id=\"fort\">monde</span> !"
 
 // - ajouter le div dans votre body
 document.body.appendChild(divJavascript);
+// document.body.prepend(divJavascript);
+let monde = document.getElementById("fort");
+
+// monde.style.fontWeight = "bold";
