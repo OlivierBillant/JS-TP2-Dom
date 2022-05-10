@@ -47,8 +47,22 @@ console.log("7. Ok");
 // Exercice :
 // En utilisant javascript :
 // - créer un nouvel élément de type paragraphe
+let paragraphe = document.createElement("p");
+paragraphe.setAttribute("id", "paragrapheTest")
+
 // - ajouter le texte "Salut tout le monde !" dans ce paragraphe
+paragraphe.innerHTML = "Salut tout le monde !!!";
+
 // - créer un élément de type div ayant pour id "divJavascript"
+let divJavascript = document.createElement("div");
+divJavascript.setAttribute("id", "divJavascript");
+
 // - ajouter le paragraphe créer dans la question 1 dans le div
+divJavascript.appendChild(paragraphe);
+
 // - changer le couleur du paragraphe en bleu et mettre le mot "monde" en gras
+paragraphe.style.color = "blue";
+paragraphe.innerHTML = "Salut tout le <strong>monde</strong> !"
+
 // - ajouter le div dans votre body
+document.body.appendChild(divJavascript);
