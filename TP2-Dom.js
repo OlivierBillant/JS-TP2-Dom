@@ -43,3 +43,12 @@ let liSecondElements = document.querySelectorAll("ul>li:nth-child(2)");
 console.log(liSecondElements);
 Array.from(liSecondElements).forEach(element => element.style.cssText = "color : red");
 console.log("7. Ok");
+
+// Exercice :
+// En utilisant javascript :
+// - créer un nouvel élément de type paragraphe
+// - ajouter le texte "Salut tout le monde !" dans ce paragraphe
+// - créer un élément de type div ayant pour id "divJavascript"
+// - ajouter le paragraphe créer dans la question 1 dans le div
+// - changer le couleur du paragraphe en bleu et mettre le mot "monde" en gras
+// - ajouter le div dans votre body
